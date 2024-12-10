@@ -3,27 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Convertor</title>
-    <link rel="stylesheet" type="text/css" href="TempCon.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>TEMPERATURE CONVERTER</h1>
-        <div class="converter-row">
-            <div class="col">
-                <label>Celsius</label>
-                <input type="number" id="celsius"><!--input element and temperature in number-->
-            </div>
-            <div class="col">
-                <label>Fahrenheit</label>
-                <input type="number" id="fahrenheit"><!--temperature in number-->
-            </div>
-            <div class="col">
-                <label>Kelvin</label>
-                <input type="number" id="kelvin"><!--temperature in number-->
+    <div class="menu">
+        <nav>
+             <a href "#">Home</a>
+             <a href "#">Features</a>
+             <a href "#">Booking</a>
+             <a href "#">Login</a>
+        </nav>
+    </div>
+     <div class="container">
+        <div class="left">
+            <h1>I'm Dyuti Kole</h1>
+            <p>Sophomore<br>2nd year undergraduate persuing B.Tech in Computer Science and Technology at Indian Institute of Technology, Shibpur</p>
+        </div>
+        <div class="right">
+            <img src="Images/Whatnew.jpeg" width="500px">
+        </div>
+     </div>
+     <br><br><br><br><br><br><br>
+
+
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Images/Whatnew.jpeg" >
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>A student pursuing B.Tech in Computer
+                        Science and Technology who always
+                        wants to learn something new. I wish to
+                        explore the various fields of Computer
+                        Science to gather knowledge. With my
+                        persistency, consistency and hardwork,
+                        I shall always work towards the areas
+                        of my interests to discover something
+                        new.</p>
+                        <div class="tab-titles">
+                            <p class="tab-link1" onclick="opentab('education')">Education</p>
+                            <p class="tab-link2" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link3" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-content1" id="education">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content2" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content3" id="experience">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            </ul>
+                        </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+     </div>
+     <script>
+        var tablink1=document.getElementsByClassName("tab-link1");
+        var tablink2=document.getElementsByClassName("tab-link2");
+        var tablink3=document.getElementsByClassName("tab-link3");
+        var tabcontent1=document.getElementsByClassName("tab-content1");
+        var tabcontent2=document.getElementsByClassName("tab-content2");
+        var tabcontent3=document.getElementsByClassName("tab-content3");
+        function opentab(tabname){
+            
+        }
+     </script>
+<body>
 </html>
